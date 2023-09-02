@@ -1,0 +1,96 @@
+@use "../global/colors";
+@use "../global/mixins";
+.hero {
+    padding-bottom: 140px;
+    padding-top: 70px;
+    .hero-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+        column-gap: 35px;
+        @include mixins.responsive(xs) {
+            grid-template-columns: 70% 1fr;
+            column-gap: 15px;
+        }
+        .hero-content {
+            margin-left: 40px;
+            max-width: 600px;
+            @include mixins.responsive(md) {
+                margin-left: 0;
+            }
+            .hero-title {
+                text-transform: uppercase;
+                font-size: 48px;
+                line-height: 1.16;
+                margin-bottom: 24px;
+                color: colors.$gray-1;
+                position: relative;
+                @include mixins.responsive(md) {
+                    font-size: 42px;
+                }
+                @include mixins.responsive(xs) {
+                    font-size: 30px;
+                }
+                @include mixins.responsive(xxs) {
+                    font-size: 24px;
+                }
+                &::before {
+                    content: url("../../images/Ellipse\ 116\ peach.svg");
+                    position: absolute;
+                    top: -40px;
+                    left: 30%;
+                    z-index: -1;
+                }
+            }
+            .hero-paragraph {
+                font-size: 20px;
+                margin-bottom: 32px;
+                color: colors.$gray-2;
+                line-height: 1.32;
+                position: relative;
+                @include mixins.responsive(md) {
+                    font-size: 18px;
+                }
+                @include mixins.responsive(xs) {
+                    font-size: 16px;
+                }
+                @include mixins.responsive(xxs) {
+                    font-size: 10px;
+                }
+                &::after {
+                    content: url("../../images/Ellipse\ 119\ grey.svg");
+                    position: absolute;
+                    top: 180px;
+                    left: -40%;
+                    @include mixins.responsive(md) {
+                        top: 180px;
+                        left: -50%;
+                    }
+                    @include mixins.responsive(xxs) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .hero-img {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 100%;
+                max-width: 343px;
+                min-width: 278px;
+                margin-right: 40px;
+                object-fit: contain;
+                @include mixins.responsive(md) {
+                    margin-right: 0;
+                }
+                @include mixins.responsive(xxs) {
+                    min-width: 178px;
+                }
+            }
+        }
+    }
+}
+.hidden {
+    overflow: hidden;
+}

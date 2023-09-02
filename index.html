@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome UI</title>
+</head>
+
+<body>
+    <div class="bg-gradient-peach">
+        <div class="hidden">
+            <div class="container">
+                <header>
+                    <div class="logo">
+                        <img class="logo-img" src="./images/AU_logo.svg" alt="Brand logo">
+                        <img class="logo-text-img" src="./images/AWESOME UI.svg" alt="Brand name">
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#">About us</a></li>
+                            <li class="nav-item"><a href="#">Contact us</a></li>
+                            <li class="nav-item"><a href="#">Store</a></li>
+                            <li class="nav-item"><a href="#">Use cases</a></li>
+                        </ul>
+                        <a class="btn-call-to-action-small" href="#">Register</a>
+                    </nav>
+                    <svg class="burger-menu" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.01852 8.16658C3.73215 8.16658 3.5 7.64425 3.5 6.99992C3.5 6.35559 3.73215 5.83325 4.01852 5.83325H12.3148C12.6012 5.83325 12.8333 6.35559 12.8333 6.99992C12.8333 7.64425 12.6012 8.16658 12.3148 8.16658H4.01852ZM4.66667 15.1666C4.02233 15.1666 3.5 14.6443 3.5 13.9999C3.5 13.3556 4.02233 12.8333 4.66667 12.8333H23.3333C23.9777 12.8333 24.5 13.3556 24.5 13.9999C24.5 14.6443 23.9777 15.1666 23.3333 15.1666H4.66667ZM15 20.9998C15 21.552 15.2239 21.9998 15.5 21.9998H23.5C23.7761 21.9998 24 21.552 24 20.9998C24 20.4475 23.7761 19.9998 23.5 19.9998H15.5C15.2239 19.9998 15 20.4475 15 20.9998Z"
+                            fill="#222B45" />
+                        <mask id="mask0_1_695" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="5"
+                            width="22" height="17">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.01852 8.16658C3.73215 8.16658 3.5 7.64425 3.5 6.99992C3.5 6.35559 3.73215 5.83325 4.01852 5.83325H12.3148C12.6012 5.83325 12.8333 6.35559 12.8333 6.99992C12.8333 7.64425 12.6012 8.16658 12.3148 8.16658H4.01852ZM4.66667 15.1666C4.02233 15.1666 3.5 14.6443 3.5 13.9999C3.5 13.3556 4.02233 12.8333 4.66667 12.8333H23.3333C23.9777 12.8333 24.5 13.3556 24.5 13.9999C24.5 14.6443 23.9777 15.1666 23.3333 15.1666H4.66667ZM15 20.9998C15 21.552 15.2239 21.9998 15.5 21.9998H23.5C23.7761 21.9998 24 21.552 24 20.9998C24 20.4475 23.7761 19.9998 23.5 19.9998H15.5C15.2239 19.9998 15 20.4475 15 20.9998Z"
+                                fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_1_695)">
+                        </g>
+                    </svg>
+                </header>
+                <div class="hero">
+                    <div class="hero-wrapper">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Lorem ipsum dolor sit amet, consectetur</h1>
+                            <p class="hero-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et
+                                eros, pellentesque et. Tristique ullamcorper ac
+                                pharetra in nisi sit vivamus lorem.</p>
+                            <!-- Simple Button -->
+                            <!-- <a class="btn-call-to-action-big" href="#">
+                            <span>Get started</span>
+                            <img src="./images/Vector-arrow.svg">
+                        </a> -->
+                            <a class="btn-call-to-action-big-swipe bg-clear" href="#">
+                                <div class="btn-content-wrapper">
+                                    <span>Get started</span>
+                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.8093 7.26109L14.998 0.444912C14.8667 0.342663 14.7027 0.29197 14.5368 0.302356C14.3709 0.312741 14.2145 0.383491 14.0969 0.501314C13.9794 0.619137 13.9088 0.775925 13.8984 0.942228C13.8881 1.10853 13.9387 1.2729 14.0407 1.40447L19.6855 7.06256H0.682227C0.501289 7.06256 0.327762 7.13461 0.19982 7.26285C0.0718774 7.39109 0 7.56502 0 7.74638C0 7.92774 0.0718774 8.10168 0.19982 8.22992C0.327762 8.35816 0.501289 8.43021 0.682227 8.43021H19.6745L14.0407 14.0773C13.9643 14.1368 13.9014 14.2119 13.8562 14.2976C13.8109 14.3834 13.7844 14.4778 13.7784 14.5746C13.7724 14.6714 13.787 14.7684 13.8212 14.8591C13.8554 14.9498 13.9085 15.0322 13.9769 15.1007C14.0453 15.1693 14.1275 15.2225 14.218 15.2568C14.3085 15.2911 14.4053 15.3057 14.5018 15.2997C14.5984 15.2937 14.6926 15.2671 14.7781 15.2218C14.8637 15.1764 14.9386 15.1134 14.998 15.0368L21.8093 8.20962C21.9316 8.0822 22 7.91222 22 7.73535C22 7.55849 21.9316 7.3885 21.8093 7.26109Z"
+                                            fill="#333333" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="./images/Girl.png" alt="Girl playing tennis">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="first-section">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="first-section-content">
+                        <div class="titles-wrapper">
+                            <h2 class="section-title">MOT consectet</h2>
+                            <h3 class="section-subtitle">amet,consectet</h3>
+                        </div>
+                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                            quis vitae nullam aliquet dignissim quis. Vel, faucibus ac
+                            justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+                        <!-- <a class="btn-call-to-action-big" href="#">
+                            <span>Get started</span>
+                            <img src="./images/Vector-arrow.svg">
+                        </a> -->
+                        <a class="btn-call-to-action-big-swipe bg-clear" href="#">
+                            <div class="btn-content-wrapper">
+                                <span>Get started</span>
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8093 7.26109L14.998 0.444912C14.8667 0.342663 14.7027 0.29197 14.5368 0.302356C14.3709 0.312741 14.2145 0.383491 14.0969 0.501314C13.9794 0.619137 13.9088 0.775925 13.8984 0.942228C13.8881 1.10853 13.9387 1.2729 14.0407 1.40447L19.6855 7.06256H0.682227C0.501289 7.06256 0.327762 7.13461 0.19982 7.26285C0.0718774 7.39109 0 7.56502 0 7.74638C0 7.92774 0.0718774 8.10168 0.19982 8.22992C0.327762 8.35816 0.501289 8.43021 0.682227 8.43021H19.6745L14.0407 14.0773C13.9643 14.1368 13.9014 14.2119 13.8562 14.2976C13.8109 14.3834 13.7844 14.4778 13.7784 14.5746C13.7724 14.6714 13.787 14.7684 13.8212 14.8591C13.8554 14.9498 13.9085 15.0322 13.9769 15.1007C14.0453 15.1693 14.1275 15.2225 14.218 15.2568C14.3085 15.2911 14.4053 15.3057 14.5018 15.2997C14.5984 15.2937 14.6926 15.2671 14.7781 15.2218C14.8637 15.1764 14.9386 15.1134 14.998 15.0368L21.8093 8.20962C21.9316 8.0822 22 7.91222 22 7.73535C22 7.55849 21.9316 7.3885 21.8093 7.26109Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="first-section-atributes">
+                        <div class="atribute">
+                            <div class="icon-background">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8283 11.0716C21.7116 11.0716 21.595 11.0483 21.4783 11.0016C21.035 10.8033 20.8367 10.29 21.0233 9.84663C21.245 9.34496 21.1167 8.60996 20.7083 8.0033C20.3 7.38496 19.6817 6.96496 19.1217 6.99996C18.6083 6.99996 18.2467 6.61496 18.235 6.13663C18.235 5.64663 18.62 5.26163 19.0983 5.24996C20.3 5.22663 21.4317 5.91496 22.1667 7.0233C22.9133 8.1433 23.0883 9.48496 22.6333 10.535C22.4933 10.8733 22.1666 11.0716 21.8283 11.0716Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M25.4567 12.2266C25.3751 12.2266 25.3051 12.215 25.2234 12.1916C24.7567 12.0633 24.4884 11.585 24.6167 11.1183C25.0601 9.53164 24.6867 7.64164 23.6251 6.05498C22.5634 4.46831 20.9534 3.40664 19.3084 3.20831C18.8301 3.14998 18.4917 2.71831 18.5501 2.23998C18.6084 1.76164 19.0517 1.41164 19.5184 1.48164C21.6534 1.73831 23.7301 3.09164 25.0717 5.09831C26.4134 7.10498 26.8684 9.53164 26.2967 11.6083C26.1917 11.97 25.8417 12.2266 25.4567 12.2266Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M19.9733 13.7433C19.9733 14.0933 19.6817 14.385 19.3317 14.385H4.00165C3.65165 14.385 3.35999 14.0933 3.35999 13.7433C3.35999 13.3933 3.65165 13.1016 4.00165 13.1016H4.86499L5.19165 11.5616C5.49499 10.0683 6.13665 8.70331 8.67999 8.70331H14.665C17.2083 8.70331 17.8383 10.08 18.1533 11.5616L18.48 13.1016H19.3433C19.6817 13.1016 19.9733 13.3933 19.9733 13.7433Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M20.3348 18.5616C20.2065 17.1616 19.8332 15.6566 17.1032 15.6566H6.22984C3.49984 15.6566 3.12651 17.1616 2.99817 18.5616L2.51984 23.7533C2.46151 24.3949 2.67151 25.0483 3.11484 25.5383C3.56984 26.0283 4.19984 26.3083 4.88817 26.3083H6.48651C7.86317 26.3083 8.13151 25.5149 8.30651 25.0016L8.48151 24.4883C8.67984 23.9049 8.72651 23.7533 9.49651 23.7533H13.8598C14.6298 23.7533 14.6532 23.8349 14.8748 24.4883L15.0498 25.0016C15.2248 25.5266 15.4815 26.3083 16.8698 26.3083H18.4682C19.1448 26.3083 19.7865 26.0283 20.2415 25.5383C20.6848 25.0483 20.8948 24.4066 20.8365 23.7533L20.3348 18.5616ZM9.11151 20.3349H6.55651C6.20651 20.3349 5.91484 20.0433 5.91484 19.6933C5.91484 19.3433 6.20651 19.0516 6.55651 19.0516H9.11151C9.46151 19.0516 9.75317 19.3433 9.75317 19.6933C9.75317 20.0433 9.46151 20.3349 9.11151 20.3349ZM16.7765 20.3349H14.2215C13.8715 20.3349 13.5798 20.0433 13.5798 19.6933C13.5798 19.3433 13.8715 19.0516 14.2215 19.0516H16.7765C17.1265 19.0516 17.4182 19.3433 17.4182 19.6933C17.4182 20.0433 17.1265 20.3349 16.7765 20.3349Z"
+                                        fill="#647B64" />
+                                </svg>
+                            </div>
+                            <h4 class="atribute-title">Car Rental</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+
+                        </div>
+                        <div class="atribute">
+                            <div class="icon-background">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.63 14.66L21.22 16.52C20.51 19.72 18 22 14.38 22H9.62C6 22 3.49 19.72 2.78 16.52L2.37 14.66C2.17 13.75 2.71 12.72 3.58 12.37L5 11.8L10.51 9.58999C10.99 9.39999 11.5 9.29999 12 9.29999C12.5 9.29999 13.01 9.39999 13.49 9.58999L19 11.8L20.42 12.37C21.29 12.72 21.83 13.75 21.63 14.66Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M19 8V9.44C19 9.79 18.64 10.04 18.31 9.9L14.04 8.19C12.73 7.68 11.27 7.68 9.95 8.2L5.69 9.91C5.36 10.05 5 9.8 5 9.45V8C5 6.35 6.35 5 8 5H16C17.65 5 19 6.35 19 8Z"
+                                        fill="#647B64" />
+                                    <path d="M14.5 5H9.5V3C9.5 2.45 9.95 2 10.5 2H13.5C14.05 2 14.5 2.45 14.5 3V5Z"
+                                        fill="#647B64" />
+                                </svg>
+                            </div>
+                            <h4 class="atribute-title">Boat Cruise</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+
+                        </div>
+                        <div class="atribute">
+                            <div class="icon-background">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 13.5V18.9C4 20.6 5.39 22 7.1 22H16.9C18.6 22 20 20.61 20 18.9V13.5C20 13.22 19.78 13 19.5 13H4.5C4.22 13 4 13.22 4 13.5ZM8.88 18.38C8.65 18.62 8.33 18.75 8 18.75C7.92 18.75 7.84 18.74 7.76 18.73C7.68 18.71 7.6 18.69 7.52 18.65C7.45 18.62 7.37 18.58 7.31 18.54C7.24 18.49 7.17 18.44 7.12 18.38C6.88 18.15 6.75 17.83 6.75 17.5C6.75 17.17 6.88 16.85 7.12 16.62C7.17 16.56 7.24 16.51 7.31 16.46C7.37 16.42 7.45 16.38 7.52 16.35C7.6 16.31 7.68 16.29 7.76 16.27C8.16 16.19 8.59 16.33 8.88 16.62C9.12 16.85 9.25 17.17 9.25 17.5C9.25 17.83 9.12 18.15 8.88 18.38ZM16.88 18.38C16.83 18.44 16.76 18.49 16.69 18.54C16.63 18.58 16.55 18.62 16.48 18.65C16.4 18.69 16.32 18.71 16.25 18.73C16.16 18.74 16.08 18.75 16 18.75C15.92 18.75 15.84 18.74 15.76 18.73C15.68 18.71 15.6 18.69 15.52 18.65C15.45 18.62 15.37 18.58 15.31 18.54C15.24 18.49 15.17 18.44 15.12 18.38C14.88 18.15 14.75 17.83 14.75 17.5C14.75 17.17 14.88 16.85 15.12 16.62C15.17 16.56 15.24 16.51 15.31 16.46C15.37 16.42 15.45 16.38 15.52 16.35C15.6 16.31 15.68 16.29 15.76 16.27C15.92 16.24 16.08 16.24 16.25 16.27C16.32 16.29 16.4 16.31 16.48 16.35C16.55 16.38 16.63 16.42 16.69 16.46C16.76 16.51 16.83 16.56 16.88 16.62C17.12 16.85 17.25 17.17 17.25 17.5C17.25 17.83 17.12 18.15 16.88 18.38Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M16.9 2H7.1C5.39 2 4 3.39 4 5.1V7.5C4 7.78 4.22 8 4.5 8H19.5C19.78 8 20 7.78 20 7.5V5.1C20 3.39 18.61 2 16.9 2ZM14.5 5.75H9.5C9.09 5.75 8.75 5.41 8.75 5C8.75 4.59 9.09 4.25 9.5 4.25H14.5C14.91 4.25 15.25 4.59 15.25 5C15.25 5.41 14.91 5.75 14.5 5.75Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M19.5 12H4.5C4.22 12 4 11.78 4 11.5V9.5C4 9.22 4.22 9 4.5 9H19.5C19.78 9 20 9.22 20 9.5V11.5C20 11.78 19.78 12 19.5 12Z"
+                                        fill="#647B64" />
+                                </svg>
+                            </div>
+                            <h4 class="atribute-title">Bus Trip</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+
+                        </div>
+                        <div class="atribute">
+                            <div class="icon-background">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V17C11.25 16.59 11.59 16.25 12 16.25C12.41 16.25 12.75 16.59 12.75 17V18C12.75 18.41 12.41 18.75 12 18.75Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M12 22.75C11.59 22.75 11.25 22.41 11.25 22V21C11.25 20.59 11.59 20.25 12 20.25C12.41 20.25 12.75 20.59 12.75 21V22C12.75 22.41 12.41 22.75 12 22.75Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M2 22.75C1.94 22.75 1.88 22.74 1.82 22.73C1.42 22.63 1.17 22.22 1.27 21.82L2.27 17.82C2.37 17.42 2.77 17.17 3.18 17.27C3.58 17.37 3.83 17.78 3.73 18.18L2.73 22.18C2.64 22.52 2.34 22.75 2 22.75Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M21.7526 22.5026C21.4126 22.5026 21.1126 22.2726 21.0226 21.9326L20.0226 17.9326C19.9226 17.5326 20.1626 17.1226 20.5726 17.0226C20.9726 16.9226 21.3826 17.1626 21.4826 17.5726L22.4826 21.5726C22.5826 21.9726 22.3426 22.3826 21.9326 22.4826C21.8726 22.4926 21.8126 22.5026 21.7526 22.5026Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M19.14 5.3C19.14 5.6 18.89 5.84 18.6 5.84H5.53C5.23 5.84 4.99 5.59 4.99 5.3C4.99 5 5.24 4.76 5.53 4.76H6.27L6.55 3.45C6.81 2.17 7.35 1 9.51 1H14.6C16.76 1 17.31 2.17 17.57 3.44L17.85 4.75H18.59C18.89 4.75 19.14 5 19.14 5.3Z"
+                                        fill="#647B64" />
+                                    <path
+                                        d="M19.45 9.39999C19.34 8.19999 19.02 6.92999 16.69 6.92999H7.43C5.1 6.92999 4.79 8.20999 4.67 9.39999L4.26 13.82C4.21 14.37 4.39 14.92 4.77 15.34C5.16 15.76 5.7 16 6.28 16H7.64C8.82 16 9.04 15.33 9.19 14.88L9.34 14.44C9.51 13.94 9.55 13.82 10.2 13.82H13.92C14.57 13.82 14.59 13.89 14.78 14.44L14.93 14.88C15.07 15.33 15.3 16 16.47 16H17.83C18.4 16 18.95 15.76 19.34 15.34C19.72 14.93 19.9 14.37 19.85 13.82L19.45 9.39999ZM9.88 10.92H7.71C7.41 10.92 7.17 10.67 7.17 10.38C7.17 10.09 7.42 9.83999 7.71 9.83999H9.89C10.19 9.83999 10.43 10.09 10.43 10.38C10.43 10.67 10.18 10.92 9.88 10.92ZM16.41 10.92H14.23C13.93 10.92 13.69 10.67 13.69 10.38C13.69 10.09 13.94 9.83999 14.23 9.83999H16.41C16.71 9.83999 16.95 10.09 16.95 10.38C16.95 10.67 16.71 10.92 16.41 10.92Z"
+                                        fill="#647B64" />
+                                </svg>
+                            </div>
+                            <h4 class="atribute-title">Road Trip</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="titles-wrapper">
+                        <h2 class="section-title">MOT consectet</h2>
+                        <h3 class="section-subtitle">amet,consectet iquet</h3>
+                    </div>
+                    <div class="second-section-atributes">
+                        <div class="atribute">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40.053 5.94666C34.7196 5.11999 29.2797 5.11999 23.9464 5.94666C21.7597 6.29333 20.1597 8.15998 20.1597 10.3466V20.16H10.3463C8.15967 20.16 6.29302 21.76 5.94635 23.9467C5.11969 29.28 5.11969 34.7199 5.94635 40.0533C6.29302 42.2399 8.15967 43.84 10.3463 43.84H14.8263C15.573 43.84 16.1597 43.2533 16.1597 42.5066V37.92C16.1597 32.4533 20.613 28 26.0797 28H37.9197C38.9863 28 39.8397 27.1466 39.8397 26.08V17.4933C39.8397 16.7466 40.4263 16.16 41.173 16.16H42.5063C43.253 16.16 43.8397 15.5733 43.8397 14.8266V10.3466C43.8397 8.15998 42.2396 6.29333 40.053 5.94666ZM27.5463 14.8799C26.453 14.8799 25.413 13.84 25.413 12.7466C25.413 11.6266 26.453 10.5866 27.5463 10.5866C28.0796 10.5866 28.6664 10.8267 29.0397 11.2C29.4397 11.5733 29.7064 12.1866 29.7064 12.7466C29.7064 13.84 28.6663 14.8799 27.5463 14.8799Z"
+                                    fill="#647B64" />
+                                <path
+                                    d="M58.0528 23.9466C57.7061 21.76 55.8395 20.1599 53.6528 20.1599H45.1728C44.4262 20.1599 43.8395 20.7466 43.8395 21.4933V26.0799C43.8395 29.3333 41.1995 31.9999 37.9195 31.9999H26.0795C22.7995 31.9999 20.1595 34.64 20.1595 37.92V53.6533C20.1595 55.8399 21.7595 57.7066 23.9462 58.0533C29.2795 58.8799 34.7195 58.8799 40.0528 58.0533C42.2395 57.7066 43.8395 55.8399 43.8395 53.6533V43.84H53.6528C55.8395 43.84 57.7061 42.2399 58.0528 40.0533C58.8795 34.7199 58.8795 29.28 58.0528 23.9466ZM36.4529 53.4133C35.3595 53.4133 34.2928 52.3733 34.2928 51.2533C34.2928 50.1333 35.3329 49.0933 36.4529 49.0933C36.9595 49.0933 37.5729 49.3333 37.9462 49.68C38.3462 50.0533 38.6129 50.6933 38.6129 51.2266C38.5862 52.3733 37.5462 53.4133 36.4529 53.4133Z"
+                                    fill="#647B64" />
+                            </svg>
+                            <h4 class="atribute-title">MOT consectet</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+                        </div>
+                        <div class="atribute">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M52.0267 17.12L34.6934 6.93336C33.0134 5.94669 30.9599 5.94669 29.2799 6.93336L11.9466 17.12C10.3199 18.08 9.30664 19.84 9.30664 21.7067V42.2667C9.30664 44.16 10.3199 45.8934 11.9466 46.8534L29.2799 57.04C30.9599 58.0267 33.0134 58.0267 34.6934 57.04L52.0267 46.8534C53.6534 45.8934 54.6667 44.1334 54.6667 42.2667V21.7067C54.6667 19.84 53.6534 18.08 52.0267 17.12ZM46.3734 41.7067L33.04 49.7067C32.72 49.8933 32.3733 50 32 50C31.6267 50 31.28 49.8933 30.96 49.7067L17.6266 41.7067C16.6666 41.1467 16.3733 39.92 16.9333 38.96C17.4933 38 18.72 37.7067 19.68 38.2667L31.9733 45.6533L41.4134 39.9734L36.4533 36.9867L34.7201 38.72C34.3201 39.12 33.8133 39.3067 33.3066 39.3067C32.8 39.3067 32.2934 39.12 31.8934 38.72C31.1201 37.9467 31.1201 36.6667 31.8934 35.8934L32.9067 34.88L28.1066 32L26.7201 33.3867C26.3201 33.7867 25.8133 33.9734 25.3066 33.9734C24.8 33.9734 24.2934 33.7867 23.8934 33.3867C23.1201 32.6134 23.1201 31.3334 23.8934 30.56L24.5866 29.8667L17.6266 25.68C17.0133 25.3067 16.6667 24.6667 16.6667 23.9734C16.6667 23.28 17.04 22.6134 17.6266 22.2667L30.96 14.2667C31.6 13.8934 32.4 13.8934 33.0133 14.2667L46.3467 22.2667C47.3067 22.8267 47.6 24.0534 47.04 25.0134C46.48 25.9467 45.2533 26.2667 44.2933 25.7067L32 18.32L22.5601 24L27.52 26.9867L29.2533 25.2533C30.0266 24.48 31.3067 24.48 32.0801 25.2533C32.8534 26.0267 32.8534 27.3067 32.0801 28.08L31.0667 29.0934L35.8667 31.9734L37.2533 30.5867C38.0266 29.8133 39.3067 29.8133 40.0801 30.5867C40.8534 31.36 40.8534 32.64 40.0801 33.4133L39.3867 34.1067L46.3467 38.2933C46.96 38.6667 47.3066 39.3067 47.3066 40C47.3066 40.6933 46.96 41.36 46.3734 41.7067Z"
+                                    fill="#647B64" />
+                            </svg>
+                            <h4 class="atribute-title">MOT consectet</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+                        </div>
+                        <div class="atribute">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.9998 5.33328C17.2798 5.33328 5.33314 17.2799 5.33314 32C5.33314 46.72 17.2798 58.6666 31.9998 58.6666C46.7198 58.6666 58.6665 46.72 58.6665 32C58.6665 17.2799 46.7198 5.33328 31.9998 5.33328ZM43.9998 38H35.8665L41.1731 45.52C41.8131 46.4266 41.5998 47.68 40.6932 48.2933C40.3465 48.5333 39.9464 48.6666 39.5464 48.6666C38.9064 48.6666 38.2931 48.3733 37.9198 47.8133L31.7865 39.1199L25.6531 47.8133C25.2531 48.3733 24.6398 48.6666 24.0265 48.6666C23.6265 48.6666 23.2264 48.56 22.8798 48.2933C21.9731 47.6533 21.7598 46.4 22.3998 45.52L27.7065 38H20.0531C18.9598 38 18.0531 37.0933 18.0531 36C18.0531 34.9066 18.9598 34 20.0531 34H44.0531C45.1464 34 46.0531 34.9066 46.0531 36C46.0531 37.0933 45.0931 38 43.9998 38ZM43.9998 30H19.9998C18.9065 30 17.9998 29.0933 17.9998 28C17.9998 26.9066 18.9065 26 19.9998 26H27.6531L22.3465 18.4799C21.7065 17.5733 21.9198 16.3199 22.8265 15.7066C23.7331 15.0666 24.9865 15.28 25.5998 16.1866L31.7331 24.88L37.8665 16.1866C38.5065 15.28 39.7598 15.0666 40.6398 15.7066C41.5464 16.3466 41.7598 17.5999 41.1198 18.4799L35.8131 26H43.9465C45.0398 26 45.9465 26.9066 45.9465 28C45.9465 29.0933 45.0931 30 43.9998 30Z"
+                                    fill="#647B64" />
+                            </svg>
+                            <h4 class="atribute-title">MOT consectet</h4>
+                            <p class="atribute-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sit quis vitae</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="third-section">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="third-section-img">
+                    <img src="./images/people.png" alt="People in a meeting">
+                </div>
+                <div class="third-section-content">
+                    <div class="titles-wrapper">
+                        <h2 class="section-title">MOT consectet</h2>
+                        <h3 class="section-subtitle">amet,consectet</h3>
+                    </div>
+                    <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                        quis vitae nullam aliquet dignissim quis. Vel, faucibus ac
+                        justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+                    <!-- <a class="btn-call-to-action-big" href="#">
+                        <span>Get started</span>
+                        <img src="./images/Vector-arrow.svg">
+                    </a> -->
+                    <a class="btn-call-to-action-big-swipe bg-clear" href="#">
+                        <div class="btn-content-wrapper">
+                            <span>Get started</span>
+                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.8093 7.26109L14.998 0.444912C14.8667 0.342663 14.7027 0.29197 14.5368 0.302356C14.3709 0.312741 14.2145 0.383491 14.0969 0.501314C13.9794 0.619137 13.9088 0.775925 13.8984 0.942228C13.8881 1.10853 13.9387 1.2729 14.0407 1.40447L19.6855 7.06256H0.682227C0.501289 7.06256 0.327762 7.13461 0.19982 7.26285C0.0718774 7.39109 0 7.56502 0 7.74638C0 7.92774 0.0718774 8.10168 0.19982 8.22992C0.327762 8.35816 0.501289 8.43021 0.682227 8.43021H19.6745L14.0407 14.0773C13.9643 14.1368 13.9014 14.2119 13.8562 14.2976C13.8109 14.3834 13.7844 14.4778 13.7784 14.5746C13.7724 14.6714 13.787 14.7684 13.8212 14.8591C13.8554 14.9498 13.9085 15.0322 13.9769 15.1007C14.0453 15.1693 14.1275 15.2225 14.218 15.2568C14.3085 15.2911 14.4053 15.3057 14.5018 15.2997C14.5984 15.2937 14.6926 15.2671 14.7781 15.2218C14.8637 15.1764 14.9386 15.1134 14.998 15.0368L21.8093 8.20962C21.9316 8.0822 22 7.91222 22 7.73535C22 7.55849 21.9316 7.3885 21.8093 7.26109Z"
+                                    fill="#333333" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forth-section">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="row-wrapper">
+                    <div class="titles-wrapper">
+                        <h2 class="section-title">MOT consectet</h2>
+                        <h3 class="section-subtitle">amet,consectet </h3>
+                    </div>
+                    <div class="arrows-wrapper">
+                        <div class="circle">
+                            <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.2606 27.9304C14.5098 27.8264 14.6725 27.5838 14.6725 27.3146L14.6725 20.0117L31.3335 20.0117C31.7014 20.0117 32 19.7131 32 19.3452L32 8.6821C32 8.31422 31.7014 8.01563 31.3335 8.01563L14.6724 8.01563L14.6724 0.68477C14.6724 0.415547 14.5098 0.172941 14.2619 0.0689754C14.0126 -0.0336778 13.726 0.0223033 13.5354 0.212927L0.195873 13.5085C0.0706026 13.6338 -6.08708e-05 13.8031 -6.08687e-05 13.9803C-6.08665e-05 14.1576 0.0706026 14.3269 0.194561 14.4522L13.5341 27.7864C13.7248 27.977 14.0113 28.0343 14.2606 27.9304Z"
+                                    fill="url(#paint0_linear_1_109)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_109" x1="40.2581" y1="0.0183127" x2="28.8103"
+                                        y2="60.1099" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#647B64" />
+                                        <stop offset="1" stop-color="#6ADD6A" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="circle">
+                            <svg width="32" height="28" viewBox="0 0 32 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.7394 0.0513319C17.4902 0.155297 17.3275 0.397903 17.3275 0.667126L17.3275 7.97L0.666464 7.97C0.298587 7.97 -8.60887e-07 8.26859 -8.44806e-07 8.63646L-3.78706e-07 19.2996C-3.62626e-07 19.6675 0.298587 19.9661 0.666465 19.9661L17.3276 19.9661L17.3276 27.2969C17.3276 27.5661 17.4902 27.8087 17.7381 27.9127C17.9874 28.0154 18.274 27.9594 18.4646 27.7688L31.8041 14.4732C31.9294 14.3479 32.0001 14.1786 32.0001 14.0014C32.0001 13.8241 31.9294 13.6548 31.8054 13.5295L18.4659 0.195283C18.2752 0.00465907 17.9887 -0.0526334 17.7394 0.0513319Z"
+                                    fill="url(#paint0_linear_28_711)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_28_711" x1="-8.25809" y1="27.9634" x2="3.18975"
+                                        y2="-32.1282" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#647B64" />
+                                        <stop offset="1" stop-color="#6ADD6A" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-wrapper">
+                    <div class="testimonial">
+                        <img src="./images/l-photo.png">
+                        <cite class="testimonial-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                            quis vitae“</cite>
+                        <div class="author-wrapper">
+                            <span class="author-title">CTO May & Baker</span>
+                            <span class="author-subtitle">Tayo Oshinuwa</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="./images/m-photo.png">
+                        <cite class="testimonial-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                            quis vitae“</cite>
+                        <div class="author-wrapper">
+                            <span class="author-title">CTO May & Baker</span>
+                            <span class="author-subtitle">Tayo Oshinuwa</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="./images/r-photo.png">
+                        <cite class="testimonial-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                            quis vitae“</cite>
+                        <div class="author-wrapper">
+                            <span class="author-title">CTO May & Baker</span>
+                            <span class="author-subtitle">Tayo Oshinuwa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="first-column">
+                    <div class="logo">
+                        <img class="logo-img" src="./images/AU_logo.svg" alt="Brand logo">
+                        <img class="logo-text-img" src="./images/AWESOME UI.svg" alt="Brand name">
+                    </div>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
+                        nullam aliquet</span>
+                    <div class="copyright">
+                        <span>Copyright © 2021 AWESOME.</span>
+                        <span>All rights reserved</span>
+                    </div>
+                    <div class="social-media-wrap">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./images/Instagram.svg" title="Instagram profile">
+                        </a>
+                        <a href="https://www.dribbble.com/" target="_blank">
+                            <img src="./images/Dribbble.svg" title="Dribbble profile">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="./images/Twitter.svg" title="Twitter profile">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="./images/Youtube.svg" title="Youtube profile">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="#">Lorem Ipsum 1</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem 2</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem 3</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem 4</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem 5</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="#">Lorem Ipsum 6</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem Ipsum 7</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem Ipsum 8</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem Ipsum 9</a></li>
+                        <li class="footer-nav-item"><a href="#">Lorem Ipsum 10</a></li>
+                    </ul>
+                </div>
+                <div class="message-column">
+                    <form class="message-form">
+                        <label for="message">Send Message</label>
+                        <textarea id="message" name="message" rows="3" cols="25">Your email address</textarea>
+                        <!-- Simple Button -->
+                        <!-- <a class="btn-call-to-action-big" href="#">
+                            <span>Get started</span>
+                            <img src="./images/Vector-arrow.svg">
+                        </a> -->
+                        <a class="btn-call-to-action-big-swipe" href="#">
+                            <div class="btn-content-wrapper">
+                                <span>Send message</span>
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8093 7.26109L14.998 0.444912C14.8667 0.342663 14.7027 0.29197 14.5368 0.302356C14.3709 0.312741 14.2145 0.383491 14.0969 0.501314C13.9794 0.619137 13.9088 0.775925 13.8984 0.942228C13.8881 1.10853 13.9387 1.2729 14.0407 1.40447L19.6855 7.06256H0.682227C0.501289 7.06256 0.327762 7.13461 0.19982 7.26285C0.0718774 7.39109 0 7.56502 0 7.74638C0 7.92774 0.0718774 8.10168 0.19982 8.22992C0.327762 8.35816 0.501289 8.43021 0.682227 8.43021H19.6745L14.0407 14.0773C13.9643 14.1368 13.9014 14.2119 13.8562 14.2976C13.8109 14.3834 13.7844 14.4778 13.7784 14.5746C13.7724 14.6714 13.787 14.7684 13.8212 14.8591C13.8554 14.9498 13.9085 15.0322 13.9769 15.1007C14.0453 15.1693 14.1275 15.2225 14.218 15.2568C14.3085 15.2911 14.4053 15.3057 14.5018 15.2997C14.5984 15.2937 14.6926 15.2671 14.7781 15.2218C14.8637 15.1764 14.9386 15.1134 14.998 15.0368L21.8093 8.20962C21.9316 8.0822 22 7.91222 22 7.73535C22 7.55849 21.9316 7.3885 21.8093 7.26109Z"
+                                        fill="#333333" />
+                                </svg>
+                            </div>
+                        </a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+@use "../global/colors";
+@use "../global/mixins";
+
+.third-section {
+    padding-top: 124px;
+    padding-bottom: 70px;
+    @include mixins.responsive(xs) {
+        padding-bottom: 30px;
+        padding-top: 35px;
+    }
+    .section-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        column-gap: 165px;
+        align-items: center;
+        @include mixins.responsive(lg) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 100px;
+        }
+        @include mixins.responsive(md) {
+            // transform: translateX(-35%);
+            margin-left: -250px;
+            column-gap: 80px;
+        }
+        @include mixins.responsive(sm) {
+            margin-left: -360px;
+            // transform: translateX(-60%);
+        }
+        @include mixins.responsive(xs) {
+            margin-left: -400px;
+        }
+
+        .third-section-img {
+            position: relative;
+            // @include mixins.responsive(xs) {
+            //     transform: translateX(-15%);
+            // }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: linear-gradient(
+                    252deg,
+                    rgba(239, 128, 49, 0) -6%,
+                    rgba(239, 128, 49, 0.15) 0%,
+                    rgba(239, 128, 49, 0) 66%
+                );
+
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                top: 10%;
+                left: 10%;
+            }
+            img {
+                max-width: 563px;
+                width: 100%;
+                min-width: 286px;
+                @include mixins.responsive(md) {
+                    min-width: 390px;
+                }
+            }
+        }
+        .third-section-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+
+            .titles-wrapper {
+                .section-title {
+                    align-self: start;
+                }
+                .section-subtitle {
+                    align-self: end;
+                    @include mixins.responsive(sm) {
+                        align-self: start;
+                    }
+                }
+            }
+        }
+    }
+}

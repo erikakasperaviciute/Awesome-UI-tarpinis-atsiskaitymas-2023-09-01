@@ -1,0 +1,121 @@
+@use "../global/colors";
+@use "../global/mixins";
+
+.second-section {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    @include mixins.responsive(xs) {
+        padding-bottom: 35px;
+        padding-top: 25px;
+    }
+    @include mixins.responsive(xl) {
+        overflow: hidden;
+    }
+    .section-wrapper {
+        @include mixins.responsive(xl) {
+            margin-left: 30px;
+        }
+        .titles-wrapper {
+            align-items: center;
+            margin-bottom: 56px;
+            @include mixins.responsive(xs) {
+                margin-bottom: 16px;
+            }
+        }
+        .second-section-atributes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            @include mixins.responsive(xl) {
+                grid-template-columns: repeat(3, 340px);
+            }
+            @include mixins.responsive(xs) {
+                grid-template-columns: repeat(3, 157px);
+            }
+            .atribute {
+                padding: 78px 50px 72px;
+                background: linear-gradient(
+                        0deg,
+                        rgba(100, 123, 100, 0.77) -126%,
+                        rgba(100, 123, 100, 0) 24%,
+                        rgba(100, 123, 100, 0) 100%
+                    ),
+                    white;
+                border-radius: 8px;
+                cursor: pointer;
+                &:hover {
+                    background-color: colors.$primary-green;
+                    color: white;
+                }
+                &:hover svg path {
+                    fill: white;
+                }
+                &:hover .atribute-title {
+                    color: white;
+                }
+                &:hover .atribute-text {
+                    color: white;
+                }
+                &:first-of-type {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: url("../../images/Dots\ 8px.1.svg");
+                        z-index: -1;
+                        top: 137px;
+                        left: -37px;
+                        @include mixins.responsive(xs) {
+                            transform: scale(0.5);
+                            top: 35px;
+                            left: -72px;
+                        }
+                    }
+                }
+                &:last-of-type {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background: linear-gradient(
+                            360deg,
+                            rgba(239, 128, 49, 0) 0%,
+                            rgba(239, 128, 49, 0.15) 2%,
+                            rgba(239, 128, 49, 0) 100%
+                        );
+
+                        z-index: -1;
+                        width: 100vw;
+                        height: 182px;
+                        top: 169px;
+                        left: 150px;
+                    }
+                }
+                .atribute-title {
+                    text-transform: uppercase;
+                    color: colors.$gray-1;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-top: 24px;
+                    margin-bottom: 6px;
+                    @include mixins.responsive(xs) {
+                        font-size: 12px;
+                    }
+                }
+                .atribute-text {
+                    color: colors.$gray-2;
+                    line-height: 1.32;
+                    @include mixins.responsive(xs) {
+                        font-size: 8px;
+                    }
+                }
+                @include mixins.responsive(xs) {
+                    padding: 32px 21px;
+                }
+                svg {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+}

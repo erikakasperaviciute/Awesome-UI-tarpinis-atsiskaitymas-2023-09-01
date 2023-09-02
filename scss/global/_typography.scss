@@ -1,0 +1,67 @@
+@use "./colors";
+@use "./mixins";
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.titles-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    @include mixins.responsive(xs) {
+        row-gap: 6px;
+    }
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: colors.$orangy;
+    @include mixins.responsive(sm) {
+        font-size: 22px;
+    }
+    @include mixins.responsive(xs) {
+        font-size: 18px;
+    }
+    @include mixins.responsive(xs) {
+        font-size: 13px;
+    }
+}
+.section-subtitle {
+    text-transform: uppercase;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: colors.$primary-green;
+    @include mixins.responsive(sm) {
+        font-size: 36px;
+    }
+    @include mixins.responsive(xs) {
+        font-size: 32px;
+    }
+    @include mixins.responsive(xs) {
+        font-size: 20px;
+    }
+}
+
+.section-paragraph {
+    line-height: 1.32;
+    color: colors.$gray-2;
+
+    @include mixins.responsive(xs) {
+        font-size: 14px;
+    }
+    @include mixins.responsive(xxs) {
+        font-size: 10px;
+    }
+}

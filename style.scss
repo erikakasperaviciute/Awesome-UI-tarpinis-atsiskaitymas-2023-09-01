@@ -1,0 +1,56 @@
+@use "scss/components/header";
+@use "scss/components/hero";
+@use "scss/components/first-section";
+@use "scss/components/second-section";
+@use "scss/components/third-section";
+@use "scss/components/forth-section";
+@use "scss/components/footer";
+@use "scss/global/colors";
+@use "scss/global/buttons";
+@use "scss/global/typography";
+@use "scss/global/mixins";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.bg-gradient-peach {
+    background: linear-gradient(
+            165deg,
+            rgba(239, 128, 49, 0) -10%,
+            rgba(239, 128, 49, 0.1) 16%,
+            rgba(239, 128, 49, 0) 81%
+        ),
+        linear-gradient(190deg, rgba(209, 209, 209, 0.1) 67%, rgba(255, 255, 255, 0.5) 93%);
+}
+
+.container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    @include mixins.responsive(xxs) {
+        width: 32px;
+        height: 33px;
+    }
+}
+.logo-text-img {
+    max-width: 129px;
+    max-height: 15px;
+    @include mixins.responsive(xxs) {
+        width: 85px;
+        height: 10px;
+    }
+}

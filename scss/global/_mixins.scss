@@ -1,0 +1,29 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    } @else if $breakpoint == lg {
+        @media (max-width: 1030px) {
+            @content;
+        }
+    } @else if $breakpoint == md {
+        @media (max-width: 830px) {
+            @content;
+        }
+    } @else if $breakpoint == sm {
+        @media (max-width: 685px) {
+            @content;
+        }
+    } @else if $breakpoint == xs {
+        @media (max-width: 590px) {
+            @content;
+        }
+    } @else if $breakpoint == xxs {
+        @media (max-width: 425px) {
+            @content;
+        }
+    } @else {
+        @error "#{$breakpoint} breakpoint does not exist";
+    }
+}

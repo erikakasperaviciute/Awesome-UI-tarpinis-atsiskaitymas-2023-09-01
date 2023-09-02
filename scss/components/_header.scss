@@ -1,0 +1,56 @@
+@use "../global/colors";
+@use "../global/mixins";
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+
+    .logo {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+    }
+    .burger-menu {
+        display: none;
+        cursor: pointer;
+        @include mixins.responsive(md) {
+            display: block;
+        }
+    }
+    .main-nav {
+        display: flex;
+        column-gap: 48px;
+        align-items: center;
+        @include mixins.responsive(lg) {
+            column-gap: 20px;
+        }
+        @include mixins.responsive(md) {
+            display: none;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            column-gap: 48px;
+        }
+        .nav-item {
+            &:hover a {
+                color: colors.$primary-green;
+            }
+        }
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: colors.$gray-1;
+        }
+        .btn-call-to-action-small {
+            color: colors.$whiteish;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

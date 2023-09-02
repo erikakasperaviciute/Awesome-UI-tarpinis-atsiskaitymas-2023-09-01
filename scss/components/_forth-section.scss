@@ -1,0 +1,113 @@
+@use "../global/colors";
+@use "../global/mixins";
+
+.forth-section {
+    padding-top: 70px;
+    padding-bottom: 170px;
+    @include mixins.responsive(lg) {
+        overflow: hidden;
+    }
+    @include mixins.responsive(sm) {
+        padding-bottom: 70px;
+    }
+    .section-wrapper {
+        .row-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .arrows-wrapper {
+                display: flex;
+                @include mixins.responsive(sm) {
+                    display: none;
+                }
+                .circle {
+                    width: 75px;
+                    height: 75px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    border-radius: 45px;
+                    cursor: pointer;
+                    &:hover {
+                        background: linear-gradient(120deg, rgba(100, 123, 100, 1) 0%, rgba(102, 172, 102, 1) 100%);
+                    }
+                    &:hover svg path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+        .testimonials-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 360px);
+            column-gap: 40px;
+            @include mixins.responsive(xs) {
+                grid-template-columns: repeat(3, 233px);
+            }
+            .testimonial {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                background: linear-gradient(
+                        0deg,
+                        rgba(100, 123, 100, 0.77) -126%,
+                        rgba(100, 123, 100, 0) 24%,
+                        rgba(100, 123, 100, 0) 100%
+                    ),
+                    white;
+                padding: 32px 60px 32px 40px;
+                border-radius: 8px;
+                @include mixins.responsive(xs) {
+                    padding: 20px 16px 20px 26px;
+                }
+                img {
+                    max-width: 154px;
+                    width: 100%;
+                    object-fit: contain;
+                    @include mixins.responsive(xs) {
+                        width: 103px;
+                    }
+                }
+                .testimonial-text {
+                    line-height: 1.32;
+                    color: colors.$gray-2;
+                    margin-top: 24px;
+                    @include mixins.responsive(xs) {
+                        font-size: 12px;
+                    }
+                }
+                .author-wrapper {
+                    position: absolute;
+                    left: 190px;
+                    top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    @include mixins.responsive(xs) {
+                        left: 135px;
+                        top: 38px;
+                    }
+                    .author-title {
+                        font-weight: 600;
+                        line-height: 1.16;
+                        color: colors.$gray-1;
+                        @include mixins.responsive(xs) {
+                            font-size: 12px;
+                        }
+                    }
+                    .author-subtitle {
+                        font-size: 13px;
+                        letter-spacing: 0.4px;
+                        line-height: 1.32;
+                        color: colors.$gray-2;
+                        @include mixins.responsive(xs) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
