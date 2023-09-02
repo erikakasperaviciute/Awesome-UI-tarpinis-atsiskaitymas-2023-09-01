@@ -104,7 +104,7 @@ header .main-nav .btn-call-to-action-small:hover {
   }
 }
 .hero .hero-wrapper .hero-content .hero-title::before {
-  content: url("../../images/Ellipse-116-peach.svg");
+  content: url("../.././images/Ellipse-116-peach.svg");
   position: absolute;
   top: -40px;
   left: 30%;
@@ -133,7 +133,7 @@ header .main-nav .btn-call-to-action-small:hover {
   }
 }
 .hero .hero-wrapper .hero-content .hero-paragraph::after {
-  content: url("../../images/Ellipse-119-grey.svg");
+  content: url("../.././images/Ellipse-119-grey.svg");
   position: absolute;
   top: 180px;
   left: -40%;
