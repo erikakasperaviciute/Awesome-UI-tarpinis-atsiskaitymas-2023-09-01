@@ -4,6 +4,7 @@
 .second-section {
     padding-top: 70px;
     padding-bottom: 40px;
+    overflow: hidden;
     @include mixins.responsive(xs) {
         padding-bottom: 35px;
         padding-top: 25px;
