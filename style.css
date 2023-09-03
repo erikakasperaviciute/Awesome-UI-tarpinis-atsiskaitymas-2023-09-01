@@ -359,6 +359,7 @@ header .main-nav .btn-call-to-action-small:hover {
 .second-section {
   padding-top: 70px;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 @media (max-width: 590px) {
   .second-section {
